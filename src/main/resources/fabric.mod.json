@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "lifesteal",
+  "version": "${version}",
+  "name": "lifesteal",
+  "description": "A fabric server or client side implementation of the LifeSteal SMP.",
+  "authors": [
+    "ModernAdventurer"
+  ],
+  "contact": {},
+  "license": "Apache License v2",
+  "icon": "assets/lifesteal/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "me.robbiesymonds.lifesteal.Loader"
+    ]
+  },
+  "mixins": [
+    "lifesteal.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "minecraft": "1.19.x",
+    "java": ">=16"
+  }
+}
